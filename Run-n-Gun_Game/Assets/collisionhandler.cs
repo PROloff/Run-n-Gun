@@ -9,6 +9,8 @@ public class collisionhandler : MonoBehaviour {
 	private int collisions = 0;
 
 	private int collisionsP = 0;
+
+	public bool exist = false;
 	void Start () {
 		player = this.GetComponent<Player>();
 	}

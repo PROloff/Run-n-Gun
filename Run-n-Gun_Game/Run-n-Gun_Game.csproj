@@ -243,6 +243,7 @@
   <ItemGroup>
     <Compile Include="Assets\collisionhandler.cs" />
     <Compile Include="Assets\Disk.cs" />
+    <Compile Include="Assets\Menu.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\sphere.cs" />
   </ItemGroup>
