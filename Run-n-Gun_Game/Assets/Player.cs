@@ -11,11 +11,13 @@ public class Player : MonoBehaviour {
 	private float m_VerticalInputValue;        
 	private float m_HorizontalInputValue;
     public int playernummer = 1;
+    public int leben = 3;
 
 	private void Awake ()
     {
         m_Rigidbody = GetComponent<Rigidbody> ();
     }
+
 	void Start () {
 		
 		
@@ -26,6 +28,7 @@ public class Player : MonoBehaviour {
 		  m_VerticalInputValue = Input.GetAxis ("Vertical_P"+playernummer);
           m_HorizontalInputValue = Input.GetAxis ("Horizontal_P"+playernummer);
 	}
+
  	private void FixedUpdate ()
     {
         // Adjust the rigidbodies position and orientation in FixedUpdate.

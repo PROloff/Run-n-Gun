@@ -15,10 +15,15 @@ public class Disk : MonoBehaviour {
 	
 	private Rigidbody m_Body;
 
-	//public CollisionDetectionMode collisionhandler;
-	void Start () {
-		m_FireButton = "Fire_P" + m_PlayerNumber;
-		m_Body = GetComponent<Rigidbody>();
+    private Rigidbody m_Body;
+
+	private collisionhandler handler;
+
+    //public CollisionDetectionMode collisionhandler;
+    void Start()
+    {
+        m_FireButton = "Fire_P" + m_PlayerNumber;
+        m_Body = GetComponent<Rigidbody>();
         // The rate that the launch force charges up is the range of possible forces by the max charge time.
 		//m_ChargeSpeed = 15f + GetComponent<Player>().m_Speed;
 	}
