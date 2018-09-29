@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Szenen/Paul_Szene.unity
-  isLoaded: 1
-  isActive: 1
