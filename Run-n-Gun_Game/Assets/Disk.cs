@@ -9,7 +9,7 @@ public class Disk : MonoBehaviour
     // Use this for initialization
     public int m_PlayerNumber = 1;
     private string m_FireButton;
-    private float m_ChargeSpeed = 25f;
+    private float m_ChargeSpeed = 40f;
     public Transform m_Shell;
     public Transform arrow;
     public AudioSource Source;
@@ -49,7 +49,6 @@ public class Disk : MonoBehaviour
     }
     private void Fire()
     {
-        Debug.Log("Test");
         // Create an instance of the shell and store a reference to it's rigidbody.
         shell =
             Instantiate(m_Shell, transform.position, transform.rotation);
