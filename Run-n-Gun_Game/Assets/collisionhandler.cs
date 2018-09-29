@@ -24,7 +24,7 @@ public class collisionhandler : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.name == "Character" && collisionsP != 1)
+        if (col.gameObject.name == "Character" && collisionsP != 0)
         {
             collisionsP++;
         }
@@ -35,7 +35,7 @@ public class collisionhandler : MonoBehaviour
             exist = false;
         }
 
-        if (collisions != 4)
+        if (collisions != 2)
         {
             collisions++;
         }
