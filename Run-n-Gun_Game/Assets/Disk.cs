@@ -17,11 +17,12 @@ public class Disk : MonoBehaviour
 
     private Rigidbody m_Body;
 
-	private collisionhandler handler;
+    private Transform shell;
 
     //public CollisionDetectionMode collisionhandler;
     void Start()
     {
+        shell = null;
         m_FireButton = "Fire_P" + m_PlayerNumber;
         m_Body = GetComponent<Rigidbody>();
         // The rate that the launch force charges up is the range of possible forces by the max charge time.
@@ -39,21 +40,21 @@ public class Disk : MonoBehaviour
             direction.Normalize();
             arrow.rotation = Quaternion.LookRotation(direction, Vector3.up);
         }
-        if (Input.GetButtonDown(m_FireButton) && !handler.exist)
+        if (Input.GetButtonDown(m_FireButton) && shell == null)
         {
+			
             Fire();
         }
 
     }
     private void Fire()
     {
-            // Create an instance of the shell and store a reference to it's rigidbody.
-            Transform shellInstance =
-                Instantiate(m_Shell, transform.position, transform.rotation);
-            shellInstance.position += arrow.forward * 0.6f;
-            // Set the shell's velocity to the launch force in the fire position's forward direction.
-            shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * arrow.forward; ;
-
-            handler.exist = true;
+        Debug.Log("Test");
+        // Create an instance of the shell and store a reference to it's rigidbody.
+        shell =
+            Instantiate(m_Shell, transform.position, transform.rotation);
+        shell.position += arrow.forward * 0.6f;
+        // Set the shell's velocity to the launch force in the fire position's forward direction.
+        shell.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * arrow.forward;
     }
 }
