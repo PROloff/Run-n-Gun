@@ -241,8 +241,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Disk.cs" />
     <Compile Include="Assets\Menu.cs" />
+=======
+    <Compile Include="Assets\collisionhandler.cs" />
+    <Compile Include="Assets\Disk.cs" />
+>>>>>>> 911d12d9960f6d754b77af8b6e834b66f32d0d6f
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\sound\SoundScripts\Sound_always.cs" />
     <Compile Include="Assets\sound\SoundScripts\Sound_OnEvent.cs" />
