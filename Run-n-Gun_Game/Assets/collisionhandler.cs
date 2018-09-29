@@ -19,7 +19,7 @@ public class collisionhandler : MonoBehaviour {
 		
         if(col.gameObject.name == "Player" || col.gameObject.name == "Disc (Clone)" || col.gameObject.name == "Walltop" || col.gameObject.name == "Wallleft" || col.gameObject.name == "Walldown" || col.gameObject.name == "Wallright")
         {
-            Destroy(this.gameObject);
+           // Destroy(this.gameObject);
         }
     }
 }
