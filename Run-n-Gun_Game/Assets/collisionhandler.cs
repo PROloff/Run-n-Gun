@@ -6,7 +6,9 @@ public class collisionhandler : MonoBehaviour {
 
 	// Use this for initialization
 	public Player player;
-	private int collisions =0;
+	private int collisions = 0;
+
+	private int collisionsP = 0;
 	void Start () {
 		player = this.GetComponent<Player>();
 	}
@@ -17,20 +19,24 @@ public class collisionhandler : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision col)
     {
-		
-		switch (collisions)
+		if (col.gameObject.name == "Character" && collisionsP !=1)
 		{
-			case 0: collisions++;
-					break;
-			case 1: collisions++;
-					break;
-			case 2: Destroy(this.gameObject);
-					break;
+			collisionsP++;
 		}
-        /*if(col.gameObject.name == "Player" || col.gameObject.name == "Disc (Clone)" || col.gameObject.name == "Walltop" || col.gameObject.name == "Wallleft" || col.gameObject.name == "Walldown" || col.gameObject.name == "Wallright")
-        {
-           // Destroy(this.gameObject);
-        } 
-		*/
+		else if ( col.gameObject.name == "Character")
+		{
+			Destroy(this.gameObject);
+		}
+
+		if ( collisions != 4)
+		{
+			collisions++;
+			
+		}
+		else 
+		{
+			Destroy(this.gameObject);
+		}
+      
     }
 }
