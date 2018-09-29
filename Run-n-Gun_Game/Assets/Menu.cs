@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.anyKeyDown.Equals(2))
+		if (Input.anyKeyDown.Equals(0))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Paul_Szene");
         }
