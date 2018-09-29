@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Szenen/Tim_Szene.unity
-  isLoaded: 1
-  isActive: 1
