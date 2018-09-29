@@ -1,28 +1,6 @@
-<<<<<<< HEAD
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Run-n-Gun_Game", "Run-n-Gun_Game.csproj", "{800C3BB8-828F-76FB-8962-EC685116224D}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{800C3BB8-828F-76FB-8962-EC685116224D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{800C3BB8-828F-76FB-8962-EC685116224D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{800C3BB8-828F-76FB-8962-EC685116224D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{800C3BB8-828F-76FB-8962-EC685116224D}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-EndGlobal
-=======
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{83C6F4FD-E77C-3EB1-5D38-0B0754D4D6A7}"
 EndProject
 Global
@@ -39,5 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
 EndGlobal
->>>>>>> 79ada544165d4096214ebc21a2cb2dc33f8332f3
