@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
 	private float m_VerticalInputValue;        
 	private float m_HorizontalInputValue;
     public int playernummer = 1;
+    public Animator animator;
+    public SpriteRenderer spriterenderer;
 
 	private void Awake ()
     {
@@ -37,10 +39,19 @@ public class Player : MonoBehaviour {
     {   
         Vector3 direction = new Vector3 (m_HorizontalInputValue,0,m_VerticalInputValue);
         // Create a vector in the direction the tank is facing with a magnitude based on the input, speed and the time between frames.
-        Vector3 movement = direction * m_Speed * Time.deltaTime;
+        Vector3 movement = direction * m_Speed;
+        animator.SetFloat("Speed", movement.magnitude);
+        if (movement.x>0)
+        {
+            spriterenderer.flipX = false;
+        }
+        else if (movement.x<0)
+        {
+            spriterenderer.flipX = true;
+        }
 
         // Apply this movement to the rigidbody's position.
-        m_Rigidbody.MovePosition(m_Rigidbody.position + movement);
+        m_Rigidbody.MovePosition(m_Rigidbody.position + movement * Time.deltaTime);
     }
 
 }
