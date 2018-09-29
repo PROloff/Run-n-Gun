@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 23997986200325790}
   - component: {fileID: 54443490341836716}
   - component: {fileID: 114947940864222994}
+  - component: {fileID: 114900992572234626}
   m_Layer: 0
   m_Name: Disk
-  m_TagString: Untagged
+  m_TagString: Disk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +101,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &114900992572234626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463376814156316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73de610d54932854bafbb2b5d2195b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114947940864222994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  exist: 0
 --- !u!136 &136820121479176204
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -120,7 +133,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1463376814156316}
   m_Material: {fileID: 13400000, guid: 7e5a57937d92e46498929eba6a3dafe1, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
