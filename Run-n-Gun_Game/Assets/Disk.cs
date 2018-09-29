@@ -51,15 +51,5 @@ public class Disk : MonoBehaviour {
         // Set the shell's velocity to the launch force in the fire position's forward direction.
         shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * arrow.forward; ;
 		
-		
-        
-         // m_ShootingAudio.clip = m_FireClip;
-         // m_ShootingAudio.Play ();
-        shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * transform.forward; ;
-
-        Source.clip = m_ThrowAudio;
-        Source.Play();
-        
-       
     }
 }
