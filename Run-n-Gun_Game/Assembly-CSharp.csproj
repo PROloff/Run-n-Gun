@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\armDisk.cs" />
      <Compile Include="Assets\collisionhandler.cs" />
      <Compile Include="Assets\Disk.cs" />
      <Compile Include="Assets\levelauswahl.cs" />
