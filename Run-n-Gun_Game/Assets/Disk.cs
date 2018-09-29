@@ -14,8 +14,9 @@ public class Disk : MonoBehaviour
     public Transform arrow;
     public AudioSource Source;
     public AudioClip m_ThrowAudio;
-
-    private Rigidbody m_Body;
+    public AudioSource ThrowSource;
+	
+	private Rigidbody m_Body;
 
     private Transform shell;
 
@@ -26,8 +27,8 @@ public class Disk : MonoBehaviour
         m_FireButton = "Fire_P" + m_PlayerNumber;
         m_Body = GetComponent<Rigidbody>();
         // The rate that the launch force charges up is the range of possible forces by the max charge time.
-        //m_ChargeSpeed = 15f + GetComponent<Player>().m_Speed;
-    }
+		//m_ChargeSpeed = 15f + GetComponent<Player>().m_Speed;
+	}
 
     // Update is called once per frame
     void Update()
@@ -55,5 +56,6 @@ public class Disk : MonoBehaviour
         shell.position += arrow.forward * 0.6f;
         // Set the shell's velocity to the launch force in the fire position's forward direction.
         shell.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * arrow.forward;
-    }
+		ThrowSource.Play();
+	}
 }
