@@ -40,8 +40,9 @@ GameObject:
   - component: {fileID: 33548044601780594}
   - component: {fileID: 65035706943619188}
   - component: {fileID: 23751001025960234}
+  - component: {fileID: 114553077189975154}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1094639284733482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.19, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4808710335742424}
@@ -128,7 +129,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &65035706943619188
 BoxCollider:
@@ -142,6 +143,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114553077189975154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424806388210696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8090cc3615b32e7438d2ab566e74bc53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerNumber: 1
+  m_Shell: {fileID: 4766613464581778, guid: 17db5fd453747c44bbc0110e68a1d58e, type: 2}
 --- !u!114 &114823969650546326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 12
   m_TurnSpeed: 270
+  playernummer: 1
 --- !u!331 &331750869093171176
 SpriteMask:
   m_ObjectHideFlags: 1

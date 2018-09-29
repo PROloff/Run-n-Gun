@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
 	private Rigidbody m_Rigidbody; 
 	private float m_MovementInputValue;        
 	private float m_TurnInputValue;
-
+    public int playernummer = 1;
 
 	private void Awake ()
     {
@@ -23,8 +23,8 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		  m_MovementInputValue = Input.GetAxis ("Vertical");
-          m_TurnInputValue = Input.GetAxis ("Horizontal");
+		  m_MovementInputValue = Input.GetAxis ("Vertical_P"+playernummer);
+          m_TurnInputValue = Input.GetAxis ("Horizontal_P"+playernummer);
 	}
  	private void FixedUpdate ()
     {
