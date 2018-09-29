@@ -10,6 +10,8 @@ public class Disk : MonoBehaviour {
 	private string m_FireButton;
 	private float m_ChargeSpeed = 25f;
 	public Transform m_Shell;
+    public AudioSource Source;
+    public AudioClip m_ThrowAudio;
 	
 	private Rigidbody m_Body;
 
@@ -39,11 +41,9 @@ public class Disk : MonoBehaviour {
 			shellInstance.position += transform.forward*0.6f;
         // Set the shell's velocity to the launch force in the fire position's forward direction.
         shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * transform.forward; ;
-		
-		
-        
-         // m_ShootingAudio.clip = m_FireClip;
-         // m_ShootingAudio.Play ();
+
+        Source.clip = m_ThrowAudio;
+        Source.Play();
         
        
     }

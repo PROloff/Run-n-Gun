@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
@@ -18,3 +19,25 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Run-n-Gun_Game", "Run-n-Gun_Game.csproj", "{800C3BB8-828F-76FB-8962-EC685116224D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{800C3BB8-828F-76FB-8962-EC685116224D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800C3BB8-828F-76FB-8962-EC685116224D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800C3BB8-828F-76FB-8962-EC685116224D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800C3BB8-828F-76FB-8962-EC685116224D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+>>>>>>> 38fe5cf86532e0bd17cade99c941ed4dd708e554
