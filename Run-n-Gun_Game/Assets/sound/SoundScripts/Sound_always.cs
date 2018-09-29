@@ -8,7 +8,7 @@ public class Sound_Music_ingame : MonoBehaviour {
 
     private void Awake()
     {
-        Sound = GetComponent();
+        Sound = GetComponent<AudioSource>();
     }
     // Use this for initialization
     void Start () {

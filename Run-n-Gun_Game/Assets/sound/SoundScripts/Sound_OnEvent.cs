@@ -8,12 +8,12 @@ public class Sound_OnEvent : MonoBehaviour {
 
     private void Awake()
     {
-        Sound1 = GetComponent();
+        Sound1 = GetComponent<AudioSource>();
     }
 
     // Use this for initialization
     void Start () {
-		if()
+		if(false)
         {
             Sound1.Play();
         } //if
