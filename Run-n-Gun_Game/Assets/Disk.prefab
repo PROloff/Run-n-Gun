@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 136820121479176204}
   - component: {fileID: 23997986200325790}
   - component: {fileID: 54443490341836716}
+  - component: {fileID: 114947940864222994}
   m_Layer: 0
   m_Name: Disk
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463376814156316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.88, y: 0.84, z: -1.385}
+  m_LocalPosition: {x: -3.09, y: 1.06, z: 0}
   m_LocalScale: {x: 1, y: 0.001, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,13 +100,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &114947940864222994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463376814156316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4192107ecc040044187a7f6e299b70ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!136 &136820121479176204
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463376814156316}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7e5a57937d92e46498929eba6a3dafe1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5

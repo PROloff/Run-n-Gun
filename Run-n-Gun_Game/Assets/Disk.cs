@@ -27,7 +27,7 @@ public class Disk : MonoBehaviour {
 		{
 			Fire();
 		}
-		
+	
 	}
 	 private void Fire ()
     {	
@@ -41,8 +41,7 @@ public class Disk : MonoBehaviour {
         shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * transform.forward; ;
 		
 		
-        // Change the clip to the firing clip and play it.
-
+        
          // m_ShootingAudio.clip = m_FireClip;
          // m_ShootingAudio.Play ();
         
