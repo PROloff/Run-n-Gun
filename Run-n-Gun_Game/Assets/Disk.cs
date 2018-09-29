@@ -10,9 +10,13 @@ public class Disk : MonoBehaviour {
 	private string m_FireButton;
 	private float m_ChargeSpeed = 25f;
 	public Transform m_Shell;
+<<<<<<< HEAD
+	public Transform arrow;
+=======
     public AudioSource Source;
     public AudioClip m_ThrowAudio;
 	
+>>>>>>> 38fe5cf86532e0bd17cade99c941ed4dd708e554
 	private Rigidbody m_Body;
 
 	//public CollisionDetectionMode collisionhandler;
@@ -25,7 +29,15 @@ public class Disk : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown (m_FireButton))
+		 var m_VerticalInputValue = Input.GetAxis ("Vertical2_P"+m_PlayerNumber);
+         var m_HorizontalInputValue = Input.GetAxis ("Horizontal2_P"+m_PlayerNumber);
+		 if (m_VerticalInputValue!=0 || m_HorizontalInputValue!=0)
+		 {
+		 Vector3 direction = new Vector3 (m_HorizontalInputValue,0,m_VerticalInputValue);
+		 direction.Normalize(); 
+		 arrow.rotation = Quaternion.LookRotation (direction, Vector3.up);
+		 }
+		 if (Input.GetButtonDown (m_FireButton))
 		{
 			Fire();
 		}
@@ -38,12 +50,21 @@ public class Disk : MonoBehaviour {
         // Create an instance of the shell and store a reference to it's rigidbody.
         Transform shellInstance =
     		Instantiate (m_Shell, transform.position, transform.rotation);
-			shellInstance.position += transform.forward*0.6f;
+			shellInstance.position += arrow.forward*0.6f;
         // Set the shell's velocity to the launch force in the fire position's forward direction.
+<<<<<<< HEAD
+        shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * arrow.forward; ;
+		
+		
+        
+         // m_ShootingAudio.clip = m_FireClip;
+         // m_ShootingAudio.Play ();
+=======
         shellInstance.GetComponent<Rigidbody>().velocity = m_ChargeSpeed * transform.forward; ;
 
         Source.clip = m_ThrowAudio;
         Source.Play();
+>>>>>>> 38fe5cf86532e0bd17cade99c941ed4dd708e554
         
        
     }
