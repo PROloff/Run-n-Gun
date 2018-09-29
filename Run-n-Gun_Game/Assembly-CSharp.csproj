@@ -54,8 +54,6 @@
      <Compile Include="Assets\collisionhandler.cs" />
      <Compile Include="Assets\Disk.cs" />
      <Compile Include="Assets\Player.cs" />
-     <Compile Include="Assets\sound\SoundScripts\Sound_always.cs" />
-     <Compile Include="Assets\sound\SoundScripts\Sound_OnEvent.cs" />
      <Compile Include="Assets\sphere.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
