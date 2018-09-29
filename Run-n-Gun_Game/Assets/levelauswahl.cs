@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Menu : MonoBehaviour {
+public class levelauswahl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,9 +12,9 @@ public class Menu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Menue"))
+		if (Input.GetButtonDown("Menü"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("levelauswahl");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("levelauswahlw");
         }
 	}
 }
