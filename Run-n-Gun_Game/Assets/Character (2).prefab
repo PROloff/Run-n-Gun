@@ -114,13 +114,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985292709008090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.03, y: -0.3195, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4143527457956404}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &4965432761729420
 Transform:
   m_ObjectHideFlags: 1
@@ -207,10 +207,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlayerNumber: 2
-  m_Shell: {fileID: 4766613464581778, guid: 17db5fd453747c44bbc0110e68a1d58e, type: 2}
+  m_Shell: {fileID: 4429718028923440, guid: f208cad4c0390b14585c95ade1b0410c, type: 2}
   arrow: {fileID: 4965432761729420}
-  Source: {fileID: 0}
-  m_ThrowAudio: {fileID: 0}
   ThrowSource: {fileID: 0}
 --- !u!114 &114530402576471348
 MonoBehaviour:
@@ -228,6 +226,7 @@ MonoBehaviour:
   playernummer: 2
   animator: {fileID: 95497014598456060}
   spriterenderer: {fileID: 212622685260671256}
+  deathSound: {fileID: 0}
 --- !u!212 &212622685260671256
 SpriteRenderer:
   m_ObjectHideFlags: 1
