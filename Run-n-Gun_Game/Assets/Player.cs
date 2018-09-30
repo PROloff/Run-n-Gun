@@ -68,11 +68,11 @@ public class Player : MonoBehaviour
             Destroy(this.gameObject);
             if (playernummer==1)
             {
-                  UnityEngine.SceneManagement.SceneManager.LoadScene("BlueWins");                
+                  UnityEngine.SceneManagement.SceneManager.LoadScene("OrangeWins");                
             }
             else
             {
-                  UnityEngine.SceneManagement.SceneManager.LoadScene("OrangeWins");
+                  UnityEngine.SceneManagement.SceneManager.LoadScene("BlueWins");
             }
             deathSound.Play();
         }
