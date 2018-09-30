@@ -35,7 +35,7 @@ public class collisionhandler : MonoBehaviour
             exist = false;
         }
 
-        if (collisions != 2)
+        if (collisions != 3)
         {
             collisions++;
         }
