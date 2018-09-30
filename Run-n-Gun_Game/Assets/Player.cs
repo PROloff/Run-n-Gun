@@ -65,6 +65,14 @@ public class Player : MonoBehaviour
         if (col.gameObject.tag == "Disk")
         {
             Destroy(this.gameObject);
+            if (playernummer==1)
+            {
+                  UnityEngine.SceneManagement.SceneManager.LoadScene("BlueWins");                
+            }
+            else
+            {
+                  UnityEngine.SceneManagement.SceneManager.LoadScene("OrangeWins");
+            }
         }
 
     }
