@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public int playernummer = 1;
     public Animator animator;
     public SpriteRenderer spriterenderer;
+    public AudioSource deathSound;
 
     private void Awake()
     {
@@ -22,7 +23,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-
+        
 
     }
 
@@ -73,6 +74,7 @@ public class Player : MonoBehaviour
             {
                   UnityEngine.SceneManagement.SceneManager.LoadScene("OrangeWins");
             }
+            deathSound.Play();
         }
 
     }

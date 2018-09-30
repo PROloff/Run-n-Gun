@@ -12,8 +12,6 @@ public class Disk : MonoBehaviour
     private float m_ChargeSpeed = 40f;
     public Transform m_Shell;
     public Transform arrow;
-    public AudioSource Source;
-    public AudioClip m_ThrowAudio;
     public AudioSource ThrowSource;
 	
 	private Rigidbody m_Body;

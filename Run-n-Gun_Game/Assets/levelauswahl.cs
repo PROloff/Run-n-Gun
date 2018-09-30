@@ -18,7 +18,7 @@ public class levelauswahl : MonoBehaviour {
         }
 		if (Input.GetButtonDown("X"))
 		{
-			UnityEngine.SceneManagement.SceneManager.LoadScene("lvl_1");
+			UnityEngine.SceneManagement.SceneManager.LoadScene("LightBike");
 		}
 		if (Input.GetButtonDown("B"))
 		{
