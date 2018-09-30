@@ -929,12 +929,12 @@ Prefab:
     - target: {fileID: 114906430440852576, guid: 372808d171e299649817ce7f46310879,
         type: 2}
       propertyPath: playernummer
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114205710086600762, guid: 372808d171e299649817ce7f46310879,
         type: 2}
       propertyPath: m_PlayerNumber
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212781776761361690, guid: 372808d171e299649817ce7f46310879,
         type: 2}
