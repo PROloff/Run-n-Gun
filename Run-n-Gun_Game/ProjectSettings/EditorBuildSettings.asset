@@ -24,8 +24,13 @@ EditorBuildSettings:
     path: Assets/Szenen/Main.unity
     guid: 384d07f5f6914ab409524f3912a3cfa9
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/LightBike/LightBike.unity
+    guid: c39cae436e830694dbbb76d6dacb90d1
+=======
     path: Assets/Szenen/OrangeWins.unity
     guid: b978a9370f2e3a7439deec0a574543ce
   - enabled: 1
     path: Assets/Szenen/BlueWins.unity
     guid: dc8605ed0efcbff4082314d754e09323
+>>>>>>> d101b13682bf530a8116a52cd875e44988cf2bad

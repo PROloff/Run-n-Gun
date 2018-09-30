@@ -245,6 +245,7 @@
     <Compile Include="Assets\collisionhandler.cs" />
     <Compile Include="Assets\Disk.cs" />
     <Compile Include="Assets\levelauswahl.cs" />
+    <Compile Include="Assets\LightBike\Move.cs" />
     <Compile Include="Assets\Menu.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\sphere.cs" />
